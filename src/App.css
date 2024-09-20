@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css?family=Jua');
+
+.App {
+  height: 100vh;
+  padding-top: 10px;
+  background-color: #3C3D37;
+  font-family: Lato, sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Jua', sans-serif;
+}
+
+#title {
+  width: 500px;
+  height: 100px;
+  color: darkgray;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+
+.drum-pads {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  width: 100%;
+  max-width: 400px;  
+}
+
+.drum-pad {
+  width: 97%;
+  height: 97%;
+  background: radial-gradient(#333, #070707);
+  border-radius: 50%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 120px;
+  font-size: 24px;
+  color: rgba(255, 255, 255, 0);
+  cursor: pointer;
+  border: 2px solid #229799;
+  aspect-ratio: 1 / 1;
+  &:hover {
+    color: rgba(255, 255, 255, 1);
+  };
+ 
+}
+
+.drum-pad:active{
+  transform: scale(1.2) rotate(20deg);
+}
+
+.pad-bank {
+  width: 332px;
+  height: 272px;
+  display: inline-block;
+  margin: 20px;
+}
+
+#display {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 20px auto;
+  padding: 5px;
+  font-size: 24px;
+  background: #229799;
+  font-family: 'Jua', sans-serif;
+  color: #111;
+  text-align: center;
+  align-items: center;
+  border: 2px solid #333;
+  border-radius: 15px;
+}
